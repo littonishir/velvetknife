@@ -1,19 +1,14 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 27
-
-
 
     defaultConfig {
         minSdkVersion 23
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -22,14 +17,4 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
 }
-
-//publish {
-//    userOrg = 'littonishir'//bintray.com用户名
-//    groupId = 'com.littonishir'//jcenter上的路径
-//    artifactId = 'velvetknifelib'//项目名称
-//    publishVersion = '1.0.0'//版本号
-//    desc = 'copy write butterknife'//描述，不重要
-//    website = 'https://github.com/littonishir/velvetknife'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
-//}
